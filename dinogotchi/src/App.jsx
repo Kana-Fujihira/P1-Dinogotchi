@@ -28,7 +28,7 @@ function App() {
       <DinoGotchi imageSrc={dinoGotchi[0].imageSrc} />
       <button>Manger</button>
       <button>Caliner</button>
-      <p>creadit </p>
+      <Credit/>
     </div>
   );
 }
