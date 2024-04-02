@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import './App.css'
 
@@ -16,15 +17,22 @@ const dinoGotchi = [
   }
 ]
 
-
 function App() {
+  
   return (
-    <>
-    </>
-  )
+    <div>
+      <h1>DinoGotchi</h1>
+    </div>
+    <div>
+      <Dinogotchi/>
+    </div>
+    <div>
+      
+    </div>
+  );
 }
 
-export default App
+export default App;
 
 
 //// mettre cette functiondans component dinogotchi 
@@ -40,3 +48,5 @@ function handleCookie() {
 
 <button onClick={handleHeart}>Manger </button>
 <button onClick={handleCookie}>Caliner</button>
+// import DinoGotchi from "../src/components/DinoGotchi"
+
