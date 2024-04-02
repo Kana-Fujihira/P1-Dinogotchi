@@ -2,9 +2,8 @@
 
 import './App.css'
 import DinoGotchi from '../src/components/DinoGotchi';
-
-import Button from '../src/components/Button'
 import Credit from '../src/components/Credit'
+
 // import DinoAngry from './src/images-dino/dino-angry';
 
 
