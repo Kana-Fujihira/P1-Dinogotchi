@@ -1,21 +1,19 @@
 
-import { useState } from 'react'
+
 import './App.css'
 import DinoGotchi from '../src/components/DinoGotchi';
-import Button from '../src/components/Button'
-import Credit from '../src/components/Credit'
+import Credit from '../src/components/Credit';
+import dinoGotchi.image from 'P1-Dinogotchi/dinogotchi/src/images-dino'
 
 const dinoGotchi = [
   {
-    imageSrc: 'P1-Dinogotchi/dinogotchi/src/images-dino/dino-home.jpg'
+    image: 'P1-Dinogotchi/dinogotchi/src/images-dino/dino-angry.jpg'
   },
   {
-    imageSrc: "P1-Dinogotchi/dinogotchi/src/images dino/dino-eat.jpg",
-    dinoEmotion: "I am full",
+    image: "P1-Dinogotchi/dinogotchi/src/images dino/dino-eat.jpg",
   },
   {
-    imageSrc: "",
-    dinoEmotion: "I am happy",
+    image: "",
   }
 ]
 
@@ -25,10 +23,8 @@ function App() {
 
     <div>
       <h1>DinoGotchi</h1>
-      <DinoGotchi imageSrc={dinoGotchi[0].imageSrc} />
-      <button>Manger</button>
-      <button>Caliner</button>
-      <p>creadit </p>
+      <DinoGotchi image={dinoGotchi[0].image} />
+      <Credit />
     </div>
   );
 }
