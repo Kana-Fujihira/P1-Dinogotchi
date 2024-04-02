@@ -1,7 +1,8 @@
 
-import { useState } from 'react'
+
 import './App.css'
 import DinoGotchi from '../src/components/DinoGotchi';
+
 import Button from '../src/components/Button'
 import Credit from '../src/components/Credit'
 // import DinoAngry from './src/images-dino/dino-angry';
@@ -29,10 +30,8 @@ function App() {
 
     <div>
       <h1>DinoGotchi</h1>
-      <DinoGotchi imageSrc={dinoGotchi[0].imageSrc} />
-      <button>Manger</button>
-      <button>Caliner</button>
-      <Credit/>
+      <DinoGotchi image={dinoGotchi[0].image} />
+      <Credit />
     </div>
   );
 }
