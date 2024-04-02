@@ -21,11 +21,11 @@ function DinoGotchi({ image }) {
     return (
         <>
             <figure>
-                <img src={image} />
-            </figure>
+                <img src="./src/images-dino/dino-home.jpg"></img>
             <button onClick={happyDinosor}>❤️{heart}</button>
             <button onClick={fullDinosor}>🍴{cookie}</button>
-        </>
+        </figure>
+</>
     );
 }
 
