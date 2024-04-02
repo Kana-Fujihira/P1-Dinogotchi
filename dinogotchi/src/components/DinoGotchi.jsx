@@ -1,10 +1,13 @@
 
 
-function DinoGotchi({ imageSrc }) {
+function DinoGotchi({  }) {
+
+
+
     return (
         <>
             <figure>
-                <img src={imageSrc}></img>
+                <img src="./src/images-dino/dino-home.jpg"></img>
             </figure>
 
         </>

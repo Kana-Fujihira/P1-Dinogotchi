@@ -4,17 +4,21 @@ import './App.css'
 import DinoGotchi from '../src/components/DinoGotchi';
 import Button from '../src/components/Button'
 import Credit from '../src/components/Credit'
+// import DinoAngry from './src/images-dino/dino-angry';
+
+
+// const imageHappy = ""
 
 const dinoGotchi = [
   {
-    imageSrc: 'P1-Dinogotchi/dinogotchi/src/images-dino/dino-home.jpg'
+    image: "./src/images-dino/dino-angry"
   },
   {
-    imageSrc: "P1-Dinogotchi/dinogotchi/src/images dino/dino-eat.jpg",
+    image: "P1-Dinogotchi/dinogotchi/src/images dino/dino-eat.jpg",
     dinoEmotion: "I am full",
   },
   {
-    imageSrc: "",
+    image: "",
     dinoEmotion: "I am happy",
   }
 ]
