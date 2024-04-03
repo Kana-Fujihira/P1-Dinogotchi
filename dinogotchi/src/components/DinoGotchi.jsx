@@ -29,11 +29,9 @@ function DinoGotchi() {
     function happyDinosor() {
         setDino(DinoHappy)
         handleHeart();
-        
-        
+
+      
     }
-
-
     const [cookie, setCookie] = useState(0)
     const handleCookie = () => {
         setCookie(cookie + 1);
@@ -42,12 +40,15 @@ function DinoGotchi() {
         setDino(DinoEat)
         handleCookie();
     }
+    function angryDinosor(){
+        setDino(DinoAngry)
+    } 
 
     return (
         <>
             <figure>
 
-                <img src={dino}></img>
+                <img onClick={angryDinosor} src={dino}></img>
                 <button onClick={happyDinosor}>❤️{heart}</button>
                 <button onClick={fullDinosor}>🍴{cookie}</button>
             </figure>
