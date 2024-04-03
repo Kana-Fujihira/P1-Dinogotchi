@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function DinoGotchi() {
+function DinoGotchi( {dinoGotchi}) {
 
     const [heart, setHeart] = useState(0)
     const handleHeart = () => {
@@ -22,7 +22,7 @@ function DinoGotchi() {
     return (
         <>
             <figure>
-                <img src="./src/images-dino/dino-home.jpg"></img>
+                <img src={dinoGotchi[0].image}></img>
                 <button onClick={happyDinosor}>❤️{heart}</button>
                 <button onClick={fullDinosor}>🍴{cookie}</button>
             </figure>
