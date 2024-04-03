@@ -26,6 +26,18 @@
     transform: rotate(360deg);
   }
 }
+/*css pour titre*/
+h1{
+
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ color:#F1A188;
+
+}
+
+/* css pour img*/
+img{
+  max-width: 200px;
+}
 /* css pour popup */
 .popup{
   background-color:#A5AA96;
@@ -56,3 +68,4 @@
 .read-the-docs {
   color: #888;
 }
+
