@@ -2,7 +2,8 @@ import { useState } from 'react'
 // import DinoHome from "dinogotchi/src/images-dino/dino-home.jpg"
  
 
-function DinoGotchi() {
+
+function DinoGotchi( {dinoGotchi}) 
     
 //     const dinoGotchi = [
 //     {
@@ -47,7 +48,8 @@ function DinoGotchi() {
     return (
         <>
             <figure>
-                <img src= "./src/images-dino/dino-home.jpg"></img>
+
+                <img src={dinoGotchi[0].image}></img>
                 <button onClick={happyDinosor}>❤️{heart}</button>
                 <button onClick={fullDinosor}>🍴{cookie}</button>
             </figure>
