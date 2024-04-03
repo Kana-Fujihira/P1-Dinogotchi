@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import {useState} from 'react';
 // import './Popup.css'; // Assurez-vous d'avoir un fichier CSS pour styliser votre pop-up
 
 const Credit = () => {

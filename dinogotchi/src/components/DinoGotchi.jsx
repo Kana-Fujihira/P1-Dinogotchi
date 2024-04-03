@@ -1,55 +1,54 @@
 import { useState } from 'react'
+import DinoAngry from '../images-dino/dino-angry.jpg'
+import DinoHome from '../images-dino/dino-home.jpg'
+import DinoEat from '../images-dino/dino-eat.jpg'
+import DinoHappy from '../images-dino/dino-happy.jpg'
 // import DinoHome from "dinogotchi/src/images-dino/dino-home.jpg"
  
 
 
-function DinoGotchi( {dinoGotchi}) 
-    
-//     const dinoGotchi = [
+function DinoGotchi() {
+//       const dinoGotchi = [
 //     {
-//     src: DinoHome
-//   },
-//   {
-//     image:dino-angry,
-//     src:"dinogotchi/src/images-dino/dino-angry.jpg"
-//   },
-
-//   {
-//     image:dino-eat,
-//     src:"dinogotchi/src/images-dino/dino-eat.jpg"
-//   },
-//   {
-//     image:dino-happy,
-//     src:"dinogotchi/src/images-dino/dino-happy.jpg"
-//   }
-// ]
-    const [happy, setHappy]=useState(true){
-        setHappy(happy=false)
-    }
-    
+//       image: DinoHome,
+//     },
+//     {
+//       image: DinoEat,
+//       dinoEmotion: "I am full",
+//     },
+//     {
+//       image: DinoHappy,
+//       dinoEmotion: "I am happy",
+//     }
+//   ]
+    const [dino, setDino]=useState(DinoHome)
     const [heart, setHeart] = useState(0)
     const handleHeart = () => {
         setHeart(heart + 1);
     }
     function happyDinosor() {
-        handleHeart(heart >= 10 && (<img src="./images-dino/dino-angry" />));
+        setDino(DinoHappy)
+        handleHeart();
+
+      
     }
-
-
     const [cookie, setCookie] = useState(0)
     const handleCookie = () => {
         setCookie(cookie + 1);
-        setHappy(happy=false);
     }
     function fullDinosor() {
-        handleCookie(cookie === 10 && (<img src="https://www.stickees.com/files/cartoon/the-simpsons/2259-garage-band-homer-sticker.png" />));
+        setDino(DinoEat)
+        handleCookie();
     }
+    function angryDinosor(){
+        setDino(DinoAngry)
+    } 
 
     return (
         <>
             <figure>
 
-                <img src={dinoGotchi[0].image}></img>
+                <img onClick={angryDinosor} src={dino}></img>
                 <button onClick={happyDinosor}>❤️{heart}</button>
                 <button onClick={fullDinosor}>🍴{cookie}</button>
             </figure>
